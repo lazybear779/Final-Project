@@ -3,21 +3,17 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-// ä¸»æ¸¸æˆç±»ï¼ŒåŒ…å«çª—å£å’Œæ¸¸æˆå¾ªçŽ¯
 public class PlantsVsZombies extends JFrame {
     Timer gameTimer;
 
     public PlantsVsZombies() {
-        // è®¾ç½®æ¸¸æˆçª—å£
         this.setSize(800, 600);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle("Plants vs Zombies in Java");
 
-        // è®¾ç½®æ¸¸æˆæ›´æ–°é€Ÿåº¦ï¼Œæ¯ç§’åˆ·æ–°60æ¬¡
         gameTimer = new Timer(1000 / 60, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // æ›´æ–°æ¸¸æˆé€»è¾‘
                 updateGame();
             }
         });
@@ -26,7 +22,6 @@ public class PlantsVsZombies extends JFrame {
     }
 
     private void updateGame() {
-        // æ›´æ–°æ¸¸æˆçŠ¶æ€
         System.out.println("Game is updating");
     }
 
